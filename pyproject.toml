@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "python-run-js-demo"
+description = ""
+authors = []
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+polywrap = "^0.1.0b7"
+
+[tool.poetry.group.dev.dependencies]
+pydantic = "^1.10.9"
+black = "^23.3.0"
+isort = "^5.12.0"
+
+[build-system]
+requires = ["poetry-core>=1.1.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+target-version = ["py310"]
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
